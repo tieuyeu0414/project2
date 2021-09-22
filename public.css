@@ -1,0 +1,69 @@
+/* public */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    object-fit: cover;
+    transition: 0.5s;
+    overflow-x: hidden;
+    outline: none;
+}
+
+html {
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+
+}
+
+p {
+    margin: 0;
+}
+
+h3,
+.video,
+p {
+    overflow: hidden;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.height100 {
+    height: 100%;
+    background-color: white;
+}
+
+.container-fluid {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-fluid1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-fluid2 {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-fluid3 {
+    max-width: 850px;
+    margin: 0px auto;
+    padding: 15px;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, span, p, a, li{
+    overflow: hidden;
+}

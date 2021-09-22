@@ -1,0 +1,182 @@
+#slider {
+    width: 100%;
+    position: relative;
+    background-color: #EEEEEE;
+    overflow-x: hidden;
+    padding-top: 50px;
+}
+
+.slider__box {
+    transition: linear 1s;
+    overflow-x: hidden;
+    transform: translateX(-130px);
+}
+
+.slider__box img {
+    width: 100%;
+}
+
+.slider__txt {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin: 55px auto 25px auto;
+    color: #4C5365;
+}
+
+.slider__txt h1,
+.slider__txt span {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 38px;
+}
+
+.slider__txt span {
+    font-weight: 700;
+}
+
+.btn {
+    z-index: 9999999999;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.btn button {
+    z-index: 9999999999;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    width: 55px;
+    height: 55px;
+    font-size: 0;
+    text-indent: -9999px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: #009FAA;
+    padding: 20px;
+}
+
+.btn button span {
+    display: block;
+    left: 15px;
+    right: 15px;
+    height: 2px;
+    background: white;
+    position: absolute;
+}
+
+.btn button span:first-child {
+    transform: translateY(8px);
+}
+
+.btn button span:last-child {
+    transform: translateY(-8px);
+}
+
+.show-btn span:first-child {
+    transform: rotate(45deg) !important;
+}
+
+.show-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.show-btn span:last-child {
+    transform: rotate(-45deg) !important;
+}
+
+.menu-wrap {
+    position: fixed;
+    z-index: 9999999999;
+    background-color: #009FAA;
+    top: 0px;
+    width: 0;
+    height: 0;
+    right: 0px;
+    overflow: hidden;
+}
+
+.show .menu-wrap {
+    width: 500px;
+    height: 500px;
+    border-bottom-left-radius: 500px;
+    animation: menuwrap 1.5s linear forwards;
+}
+
+@keyframes menuwrap {
+    0% {
+        transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    10% {
+        transform: matrix3d(1.12778, 0, 0, 0, 0, 1.12778, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    20% {
+        transform: matrix3d(1.21871, 0, 0, 0, 0, 1.21871, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    30% {
+        transform: matrix3d(1.14702, 0, 0, 0, 0, 1.14702, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    40% {
+        transform: matrix3d(1.05217, 0, 0, 0, 0, 1.05217, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    50% {
+        transform: matrix3d(1.00868, 0, 0, 0, 0, 1.00868, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    60% {
+        transform: matrix3d(1.01046, 0, 0, 0, 0, 1.01046, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    70% {
+        transform: matrix3d(1.0046, 0, 0, 0, 0, 1.0046, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    80% {
+        transform: matrix3d(1.0035, 0, 0, 0, 0, 1.0035, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    90% {
+        transform: matrix3d(1.00046, 0, 0, 0, 0, 1.00046, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    100% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+}
+
+.show .menu {
+    opacity: 1;
+    transition-delay: 0.8s;
+}
+
+.menu {
+    text-align: center;
+    padding: 20% 0 20% 20%;
+    opacity: 0;
+}
+
+.menu a {
+    color: #ffffff;
+    letter-spacing: 2px;
+    line-height: 45px;
+    font-size: 24px;
+    display: block;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+
+    .slider__txt h1,
+    .slider__txt span {
+        font-size: 22px;
+    }
+}
